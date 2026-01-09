@@ -1,15 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide-flat.min.css"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
 	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
 	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
 	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	<title>Document</title>
 </head>
 <body>
-<div class="fluig-style-guide">
-<form name="form" role="form">
-</form>
-</div>
+	
+	<form name="form" role="form">
+		<label for="nome_produto">nome produto</label>
+		<input type="text" name="nome_produto" id="nome_produto">
+
+		<label for="valor_produto">R$ </label>
+		<input type="number" name="valor_produto" id="valor_produto">
+
+		<label for="motivo_compra">motivo compra</label>
+		<textarea name="motivo_compra" id="motivo_compra"></textarea>
+
+		<label for="aprovação_status"></label>
+		<select name="aprovacao_status" id="aprovacao_status">
+			<option value="">Selecione</option>
+			<option value="Aprovado">Aprovado</option>
+			<option value="Reprovado">Reprovado</option>
+		</select>
+	</form>
+
 </body>
 </html>
